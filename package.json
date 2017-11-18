@@ -1,0 +1,15 @@
+{
+  "name": "popcount",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/js/popcount.js",
+    "test": "jasmine"
+  },
+  "author": "Sam Cackett",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
