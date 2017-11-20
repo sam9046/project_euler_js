@@ -1,12 +1,19 @@
 const FIBONACCI = function() {
-    FIBONACCI.prototype.generateFibonacci = function () {
-        var fibonacciSequence = [1, 2];
-
-        for(var i = 0; i < 5; i++) {
-            fibonacciSequence.push(fibonacciSequence[i] + fibonacciSequence[i + 1]);
+    FIBONACCI.prototype.generateFibonacci = function (limit) {
+        var a = 0, b = 2;
+        var sum = a + b;
+        while(b <= limit) {
+            var c = 4 * b + a;
+            if(c > limit) {
+                break;
+            } else {
+                a = b;
+                b = c;
+                sum += b;
+            }
         }
 
-        return fibonacciSequence;
+        return sum;
     };
 };
 
